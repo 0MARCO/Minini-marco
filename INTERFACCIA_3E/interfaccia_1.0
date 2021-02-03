@@ -1,6 +1,6 @@
 #fatto da Minini,Scalese,Bottone,Botta
-from guizero import App, Text, PushButton
-def say_hello():
+from guizero import *
+def crea_il_grafico():
 text.value = "# includiamo questo modulo per creare numeri casuali"
 from random import randint
 
@@ -100,7 +100,7 @@ print(type(coordY))
 plt.scatter(coordX,coordY)
 plt.ylabel('some numbers')
 plt.show()
-app = App(title="Hello world")
+app = App(title="GRAFICO")
 text = Text(app, text="Welcome to the Hello world app!")
-button = PushButton(app, command=say_hello)
+button = PushButton(app, command=crea_il_grafico)
 app.display()
