@@ -1,3 +1,4 @@
+#fatto da Minini,Scalese,Bottone,Botta
 from guizero import App, Text, PushButton
 def say_hello():
 text.value = "# includiamo questo modulo per creare numeri casuali"
