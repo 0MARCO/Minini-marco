@@ -1,3 +1,4 @@
+#Il codice è stato realizzato da Minini,Bottone,Scalese,Botta
 import string
 import numpy as np
 import matplotlib.pyplot as plt
