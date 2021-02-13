@@ -2,9 +2,7 @@
 import string
 import numpy as np
 import matplotlib.pyplot as plt
-
-# apriamo il file in lettura
-f = open("dati.txt", 'r')
+from guizero import App, Text, Textbox
 
 # usiamo il metodo readlines 
 # per ottenere una lista di righe del file
@@ -20,8 +18,9 @@ coordY = []
 # da notare che posso fare un ciclo all'interno di un file
 # direttamente sulle righe
 
-def bottone():
+def apri file():
 
+    f = open("dati.txt", 'r')   # apriamo il file in lettura
     for riga in f:
     valori = str(f.readline())  # converto in stringa la riga
     Nval = len(valori)          # conto il numero di caratteri
@@ -57,7 +56,7 @@ def bottone():
    plt.ylabel('Y')
    plt.show()
 
-from guizero import App, Text, Textbox
+
 
 app = App(title='Interfaccia')
 
@@ -66,7 +65,7 @@ hello_text = Text(app, text='GRAFICO', font='Helvetica', size=20)
 whatever = TextBox(app, width=50, multiline=True, height=2)
 whatever.value='Dati'
 
-push = PushButton(app, text='premi', command= bottone)
+push = PushButton(app, text='premi', command= apri file)
 push.width=10
 push.height=5
 
