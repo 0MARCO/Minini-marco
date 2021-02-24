@@ -57,4 +57,5 @@ wait = input("premi INVIO per continuare.")
 #sesta parte
 #settima parte
 #ottava parte
+lista_vestiti = ["felpa", "pantalone", "cappello", "scarpe"]
 #nona parte
