@@ -1,6 +1,4 @@
-
-
-    #Metodo costruttore
+class casa
     def __init__(self,città, proprietario, piano, grandezza, stanze, prezzo):
 
         # Attributi di Istanza
@@ -15,7 +13,7 @@
 
     #Metodo di tipo Get
     def scheda(self):
-        return f'\nScheda "{self.città}"\n Propetario: {self.propetario}\n Piano: {self.piano}\n Grandezza: {self.grandezza}\n Stanze: {self.stanze}\n Prezzo: {self.prezzo}\n assicurazione: {self.assicurazione}' 
+        return f'\nScheda "{self.città}"\n Propetario: {self.propetario}\n Piano: {self.piano}\n Grandezza: {self.grandezza}\n Stanze: {self.stanze}\n Prezzo: {self.prezzo}' 
     
 giovanni = casa("Roma","giovanni","3",100, 6, "550.000")
 
@@ -28,9 +26,8 @@ print(marco)
 print("\nLa singola scheda è:")
 print (giovanni.scheda())
 print (marco.scheda())
-print("\nauto totali: ",auto.parcoAuto)
+
 
 print("\n\naltro metodo per visualizzare le informazioni (__dict__):")
-
 print(giovanni.__dict__)
 print(marco.__dict__)
