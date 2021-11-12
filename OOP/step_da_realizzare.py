@@ -12,12 +12,10 @@ class calcComb():
     def get_listStringa(self):
         return self.__listStringa
 
-    def setStringa(self):
-        '''
-        modificare questo metodo in modo da verificare la coerenza delle variabili di
-        istanza presenti
-        '''
-        return 0
+    def setStringa(self,str ):
+         self.__stringa = str 
+        
+        return self.__stringa
 
     def charRipetuti(self):
         ogni chiave deve essere ogni carattere della stringa e edeve associare il valore alla chiave quante volte si ripete quel carattere
