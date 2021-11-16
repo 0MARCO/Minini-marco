@@ -12,14 +12,14 @@ class calcComb():
     def get_listStringa(self):
         return self.__listStringa
 
-    def setStringa(self,str ):
-         self.__stringa = str 
+    def setStringa(self):
+        
+        self.__stringa = str 
         
         return self.__stringa
 
     def charRipetuti(self):
-        ogni chiave deve essere ogni carattere della stringa e edeve associare il valore alla chiave quante volte si ripete quel carattere
-      stringa = {
+        '''
         questo metodo deve creare un dictionary all'interno del quale la chiave deve essere
         il singolo carattere, il valore deve essere il numero di ripetizioni di quel carattere
         
@@ -27,7 +27,8 @@ class calcComb():
         '''
 
     def confUtil(self):
-          str= "pop"  # nel caso di ruzzle, str deve contenere l'attributo di istanza
+        #qui andiamo a verificare (percorrendo la stringa dalla fine all'inizio eliminando l'ultimo carattere della parola contenuta nella riga del file) se la stringa che prendiamo in considerazione è presente nel file contenente tutte le parole della lingua italiana in quanto ruzzle richiede che le parole abbiano un senso compiuto
+        str= "pop"  # nel caso di ruzzle, str deve contenere l'attributo di istanza
         it = 'words.italian.txt' # è possibile aggiungere tante variabili quanti file di lingua si posseggono
 
         f = open(it, 'r')
@@ -49,41 +50,83 @@ class calcComb():
         '''
 
     def coeffBinom(n, k):
-        P = n!/K!(n-K!)!
-        
+      P = n!/K!(n-K!)!
+        pass
 
     # PERMUTAZIONI
 
     def nPermutSenzaRip(self):
-      
-        return P = n1 
-     
-      
-    def nPermutConRip(self):
-       
-        return n!/a1! x a2! x ak!...
+        '''
+        restituire il numero di permutazioni SENZA ripetizione
+        '''
+        return P = n! 
 
-    
+    def nPermutConRip(self):
+        '''
+        restituire il numero di permutazioni CON ripetizione
+        '''
+        return n! / h! k! s!
+
+ 
+    def permutConRip(self):
+        '''
+        generare e restituire la lista di permutazioni CON ripetizione
+        '''
+        return 0
+
     # DISPOSIZIONI
 
     def nDispSemplSenzaRip(self):
-      
-        return P = n!/ (n-K)!
+        '''
+        restituire il numero di disposizioni semplici SENZA ripetizione
+        '''
+        return P = n! / (n-k)!
 
     def nDispSemplConRip(self):
-       
-        return P = n^k
+        '''
+        restituire il numero di disposizioni semplici CON ripetizione
+        '''
+        return P = n**k
+
+    def dispSemplSenzaRip(self):
+        '''
+        generare e restituire la lista delle disposizioni semplici SENZA ripetizione
+        '''
+        return 0
+
+
+    def dispSemplConRip(self):
+        '''
+        generare e restituire la lista delle disposizioni semplici CON ripetizione
+        '''
+        return 0
 
     # COMBINAZIONI
 
     def nCombSemplSenzaRip(self):
-        
-        return P = n!/K!(n-k)!
+        '''
+        restituire il numero delle combinazioni SENZA ripetizione
+        '''
+        return P = n! / k! (n-k)!
 
     def nCombSemplConRip(self):
-       
-        return P = (n + k - 1)/K!(n-1)!
+        '''
+        restituire il numero delle combinazioni CON ripetizione
+        '''
+        return P = (n + k - 1)! / k! (n-1)!
 
+    def combSenzaRip(self):
+        '''
+        generare e restituire la lista delle combinazioni SENZA ripetizione
+        '''
+        return 0
+
+
+    def combConRip(self):
+        '''
+        generare e restituire la lista delle combinazioni CON ripetizione
+        '''
+        return 0
     
 
 
