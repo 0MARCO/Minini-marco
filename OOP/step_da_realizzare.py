@@ -1,3 +1,5 @@
+import math
+math.fattoriale(1000)
 class calcComb():
 
     def __init__(self, stringa):
@@ -18,6 +20,7 @@ class calcComb():
         
         return self.__stringa
 
+
     def charRipetuti(self):
         '''
         questo metodo deve creare un dictionary all'interno del quale la chiave deve essere
@@ -35,7 +38,7 @@ class calcComb():
         line = f.readline()
 
         for line in f:  # per ogni riga del file vengono eseguite le righe di codice che seguono
-        #    print(str) 
+           print(str) 
             if str == line[:-1]:  #bisogna eliminare l'ultimo carattere dalla parola contenuta nella riga del file
                 print("vero")
         '''
@@ -45,12 +48,16 @@ class calcComb():
         pass
 
     def fattoriale(n):
+          if n < 2:
+          return 1
+      else:
+          return n * fattoriale(n-1)
         '''
         implementare una qualunque versione della funzione fattoriale
         '''
 
     def coeffBinom(n, k):
-      P = n!/K!(n-K!)!
+          P = fattoriale(n)/fattoriale(K)*fattoriale(n-fattoriale(K))
         pass
 
     # PERMUTAZIONI
@@ -59,15 +66,20 @@ class calcComb():
         '''
         restituire il numero di permutazioni SENZA ripetizione
         '''
-        return P = n! 
+        return fattoriale(n)
 
     def nPermutConRip(self):
         '''
         restituire il numero di permutazioni CON ripetizione
         '''
-        return n! / h! k! s!
+        return fattoriale(n) / fattoriale(h)* fattoriale(k)* fattoriale(s)
 
- 
+    def permutSenzaRip(self):
+        '''
+        generare e restituire la lista di permutazioni SENZA ripetizione
+        '''
+        return 0
+
     def permutConRip(self):
         '''
         generare e restituire la lista di permutazioni CON ripetizione
@@ -80,13 +92,13 @@ class calcComb():
         '''
         restituire il numero di disposizioni semplici SENZA ripetizione
         '''
-        return P = n! / (n-k)!
-
+        return P = fattoriale(n) / fattoriale(n-k)
+  
     def nDispSemplConRip(self):
         '''
         restituire il numero di disposizioni semplici CON ripetizione
         '''
-        return P = n**k
+        return n**k
 
     def dispSemplSenzaRip(self):
         '''
@@ -107,13 +119,13 @@ class calcComb():
         '''
         restituire il numero delle combinazioni SENZA ripetizione
         '''
-        return P = n! / k! (n-k)!
+        return fattoriale(n) / fattoriale(k) * fattoriale(n-k)
 
     def nCombSemplConRip(self):
         '''
         restituire il numero delle combinazioni CON ripetizione
         '''
-        return P = (n + k - 1)! / k! (n-1)!
+        return fattoriale(n + k - 1) / fattoriale(k) * fattoriale(n-1)
 
     def combSenzaRip(self):
         '''
