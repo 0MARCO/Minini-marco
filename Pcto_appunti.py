@@ -41,3 +41,32 @@ print (0b11) #0 fa la conversione, se aggingiamo b, bianrio, o ottario, x essage
 2//2#ci da un numero intero
 5%2 #fa 5 diviso 2 e verra un numero con il resto, la perc ci fa uscire il resto 
 2**5 #potenza
+#Nono codice
+eta = 28 #senza le virgole è un numero, con è un testo 
+print (eta)
+
+eta_più_grande = eta + 1
+print (eta_più_grande) #uscira 29
+
+eta2 = eta*2
+print (eta2)
+
+eta += 1 #prendi la variabile eta e aggiungi 1
+eta += 5 #prendi la variabile eta e moltiplicalo per 5, e cosi via per tutte le operazioni
+
+print (eta + eta) #uscirà la somma
+
+casa = '1'
+print (casa + casa) #uscirà 11 poichè lo considera come testo e non come numero
+
+print(eta*5)
+
+#Decimo codice
+print ('Antonio ha' , eta #prendi la variiabile eta , 'anni') #è tutto testo tranne eta
+
+       casa = 1.
+       casa *= 5 
+       print (casa) ci uscirà un numero con la virgola
+input() #inserire qualcosa
+nome = input ()
+print ('Ciao' , nome)
