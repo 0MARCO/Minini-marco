@@ -29,7 +29,7 @@
 
   2 ** 2 ** 3 #Python svolge le potenze da destra verso sinistra, quindi 3 elevato alla 2, poi il risultato elevato alla 2
   print (0.1) #ci da come risultato 0.1
-  print (0.1 + 0.1 + 0.1) #Ci da come risultato 0.3000, poichè è un errore di python mentre fa un conversione, prima binario e poi in decimale
+  print (0.1 + 0.1 + 0.1) #Ci da come risultato 0.30000004, poichè è un errore di python mentre fa un conversione, prima binario e poi in decimale
 
 #Terzo codice(funzione len)
   len('ciao') #Ci dice la lunghezza di una determinata frase o stringa, se mettiamo gli spazzi egli conterà anche gli spazzi o anche i simboli
