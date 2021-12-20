@@ -33,17 +33,30 @@
 
 #Terzo codice(funzione len)
   len('ciao') #Ci dice la lunghezza di una determinata frase o stringa, se mettiamo gli spazzi egli conterà anche gli spazzi o anche i simboli
+  -- ESEMPIO spazi = len('ciao mondo!')
   lunghezza = len('ciao') #Possiamo metterlo anchee nella funzione
   lunghezza # Ci da la lunghezza di ciao
 
-#Quarto codice()
+#Quarto codice(funzione print)
+  print ('Ciao')
+  print('Mondo') #Scriverà le frasi una sotto l'altra
+  print ('Ciao' , 'Mondo' , sep = ' - ') #Anzicchè lasciare lo spazio metterà una barra, essa cambia a seconda di quello che mettiamo nel sep, sostituice la virgola
+  print ('Ciao' , 'Mondo' , end = ' . ')#Invece di andare a capo mette un punto e scrive il secondo print nella stessa riga
+  
+  ---ESEMPIO print ('Ciao' , 'come' , sep = '!' , end = '.') #Se non mettiamo niente in end, quindi end = ' ' lo scriverà nella stessa riga con lo spazio.
+             print ('stai') #Dara come risultato Ciamo!come.stai?
 
-#Quinto codice()
-
-#Sesto codice()
-
-#Settimo codice()
-
-#Ottavo codice()
-
-#Nono codice()
+ #Quinto codice(operazioni con i binari)
+  #Abbiamo solo 0 e 1 (lampadian spenta, lampadina accesa)
+  #Quando ho 1 solo di questi si chiama (BIT) , se ne abbiamo 8 (BYTE)
+  
+  ----ESEMPIO
+  primo_bit = 0
+  secondo_bit = 1
+  print(primo_bit & secondo_bit) #Fsi un'operazione logica, se sono entrambi veri, il risultato srà vero
+  print (primo_bit | secondo_bit) #Sarà sempre vero
+  print (primo_bit ^ secondo_bit) #Se entrambi sono veri avrò falso
+  print (primo_bit ~ secondo_bit) #(dilpde si fa premendo alt +126) se scrivi 2 ti esce -3, poichè diventa negativo e si fa -1
+ 
+  12 << 1 # ( 12 per( 2 elevato a 1))   Prendilo vai di uno a sinistra dammi il risultato (moltiplica)(12 << 2 = 48)
+  12 >> 1 # ( 12 diviso (2 elevato a 1)) Prendilo vai di uno a destrae dammi il risultato (divide)(12 >> 2 = 3)
