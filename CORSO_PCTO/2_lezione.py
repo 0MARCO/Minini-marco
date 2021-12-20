@@ -33,10 +33,10 @@
 
 #Terzo codice(funzione len)
   len('ciao') #Ci dice la lunghezza di una determinata frase o stringa, se mettiamo gli spazzi egli conterà anche gli spazzi o anche i simboli
-  lunghezza = len('ciao') #Possiamo metterlo ancher nella funzione
+  lunghezza = len('ciao') #Possiamo metterlo anchee nella funzione
   lunghezza # Ci da la lunghezza di ciao
 
-  #Quarto codice()
+#Quarto codice()
 
 #Quinto codice()
 
