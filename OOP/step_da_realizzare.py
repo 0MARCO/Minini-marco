@@ -1,3 +1,4 @@
+# classe calcolo combinatorio
 import math
 math.fattoriale(1000)
 class calcComb():
@@ -28,23 +29,17 @@ class calcComb():
         
         esempi di dictionary sono presenti nel file elementi_base/dictionary.py
         '''
-
-    def confUtil(self):
-        #qui andiamo a verificare (percorrendo la stringa dalla fine all'inizio eliminando l'ultimo carattere della parola contenuta nella riga del file) se la stringa che prendiamo in considerazione è presente nel file contenente tutte le parole della lingua italiana in quanto ruzzle richiede che le parole abbiano un senso compiuto
-        str= "pop"  # nel caso di ruzzle, str deve contenere l'attributo di istanza
-        it = 'words.italian.txt' # è possibile aggiungere tante variabili quanti file di lingua si posseggono
+    def cerca(self):
+        str= self.__stringa = stringa  
+        it = 'words.italian.txt'
 
         f = open(it, 'r')
         line = f.readline()
 
-        for line in f:  # per ogni riga del file vengono eseguite le righe di codice che seguono
-           print(str) 
-            if str == line[:-1]:  #bisogna eliminare l'ultimo carattere dalla parola contenuta nella riga del file
+        for line in f:  
+            if str == line[:-1]:  
                 print("vero")
-        '''
-        verificare se la STRINGA attributo di istanza è presente
-        nel file word.italian.txt 
-        '''
+    def confUtil(self):
         pass
 
     def fattoriale(n):
@@ -57,22 +52,20 @@ class calcComb():
         '''
 
     def coeffBinom(n, k):
-          P = fattoriale(n)/fattoriale(K)*fattoriale(n-fattoriale(K))
+          P = fattoriale(n)/fattoriale(K) * fattoriale(n-fattoriale(K))
         pass
 
     # PERMUTAZIONI
 
     def nPermutSenzaRip(self):
-        '''
-        restituire il numero di permutazioni SENZA ripetizione
-        '''
+        
+        calcComb.fattoriale(self.n)
         return fattoriale(n)
 
     def nPermutConRip(self):
-        '''
-        restituire il numero di permutazioni CON ripetizione
-        '''
-        return fattoriale(n) / fattoriale(h)* fattoriale(k)* fattoriale(s)
+        
+        calcComb.fattoriale(self.n)
+        return fattoriale(n) / fattoriale(h) * fattoriale(k) * fattoriale(s)
 
     def permutSenzaRip(self):
         '''
@@ -89,15 +82,15 @@ class calcComb():
     # DISPOSIZIONI
 
     def nDispSemplSenzaRip(self):
-        '''
-        restituire il numero di disposizioni semplici SENZA ripetizione
-        '''
+        
+        calcComb.fattoriale(self.n)
         return P = fattoriale(n) / fattoriale(n-k)
+      # non sa cosa sia il punto esclaamtivo. Devi dichiarare una funzione fattoriale
+        # che prende in input n e restituisce il suo fattoriale.
+        # se vai più sopra ho scritto anche la dichiarazione, devi implementarla. 
   
     def nDispSemplConRip(self):
-        '''
-        restituire il numero di disposizioni semplici CON ripetizione
-        '''
+        
         return n**k
 
     def dispSemplSenzaRip(self):
@@ -116,15 +109,13 @@ class calcComb():
     # COMBINAZIONI
 
     def nCombSemplSenzaRip(self):
-        '''
-        restituire il numero delle combinazioni SENZA ripetizione
-        '''
+        
+        calcComb.fattoriale(self.n)
         return fattoriale(n) / fattoriale(k) * fattoriale(n-k)
 
     def nCombSemplConRip(self):
-        '''
-        restituire il numero delle combinazioni CON ripetizione
-        '''
+        
+        calcComb.fattoriale(self.n)
         return fattoriale(n + k - 1) / fattoriale(k) * fattoriale(n-1)
 
     def combSenzaRip(self):
