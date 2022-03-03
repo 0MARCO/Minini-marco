@@ -56,3 +56,68 @@ if vite < 31 and livello == 8: #Se hai meno di 31 vite e stai all 8 livello prin
   print ('game Over')
 if vite < 31 and (livello == 8 or bonus_vita > 0): #Mettiamo le parentesi per far fare prima quella operazione, sarà falso x falso
   print('Hai una vita in più')
+/////////////////////////////////////////
+risposta_a = input('Ti piace viaggiare? y/n: ')
+if risposta_a == 'y':
+  risposta_b == input('Ti piace il Burundi? y/n: ')
+  if risposta_b == 'y':
+    print('Complimenti hai vinto')
+  else:
+    print('Mi spiace hai perso') #Se dici si 1 e si 2 hai vinto
+else: 
+  print('Peccato')
+//////////////////////////////////////////
+#TERZO CODICE (for(esegui quest'operazione finchè non finisce il contatore), while(esegui quest'operazione finchè non è vera))
+#Possono fare le stesse cose solo che il for continua fino alla fine rispetto a while
+contatore = 1
+while contatore < 11:
+  print('contatore')
+  contatore += 1
+print ('Finito')
+/////////////////////////////////////////
+print('''
+====================
+=INDOVINA IL NUMERO=
+====================
+''')
+numero_segreto = 14
+numero_inserito = int (input('indovina il numero segreto')
+sbagli = 0
+while numero_inserito != numero_segreto:
+  print('Sbagliato')
+  sbagli += 1 #Gli sbagli sono aumentano di 1 finchè non rispetti la condizione(numero_segreto)
+  numero_inserito = int(input('Riprova dai'))
+  print('Perfetto!Hai indovinato')
+  print('Hai sbagliato solo:')
+  print(sbagli)
+///////////////////////////////////////////
+contatore = 1
+while contatore < 11:
+  print('contatore')
+  contatore += 1
+print ('Finito')
+
+for contatore in range (1,11): #al posto di contatore potevamo scrivere x o c, è solo una vaiabile non conta nulla
+   print(contatore)
+ print('Finito')
+ /////////////////////////////////////////
+ for x in 'Ciao'
+  print('Ciao') #Me lo andrà a scrivere una sotto all'altro
+ /////////////////////////////////////////                      
+RANGE #Prende tutti i numeri tra 2 numeri, se gli do 1 numero parte da 0, se scrviamo range(1,10,2) il terzo numero significa conta ogni 2, quindi ogni quanto deve contare
+#Se la condizione è sempre vera continuerà all'infinito finchè non gli diciamo di fermarsi.
+/////////////////////////////////////////
+ whilw True:
+  nome = input('inserisci il tuo nome o ESCI per uscire:')
+  if (nome == 'ESCI') #break mi interrompe la funzione sopra che è in questo caso while
+      break 
+  print('Ciao',nome)
+ ////////////////////////////////////////
+ for i in range(1,21)
+  if i % 5 == 0: #Se i è divisibile per 5 e mi da come risultato 0, scrivilo
+    continue #Riparte il ciclo for
+  print (i)   
+ ////////////////////////////////////////
+for i in range (11)
+  pass #non serve a niente serve per non lasciare una funzione vuota
+                       
