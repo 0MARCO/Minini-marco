@@ -126,8 +126,9 @@ for a in range (1,6):
    print(a, 'moltiplicato per', b, '=', a*b 
 #Prima completa il range di sotto poi quello di sopra
 _____________________________________________________________________________________________
+i = 2 
 while i < 5:
     print(i)
     i += 1 
 else:
-    print('numero:',i)
+    print('numero:',i) #Si può scrivere pure senza else ma è più facile leggerlo con esso
