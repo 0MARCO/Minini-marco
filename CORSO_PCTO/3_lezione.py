@@ -129,6 +129,6 @@ ________________________________________________________________________________
 i = 2 
 while i < 5:
     print(i)
-    i += 1 
+    i += 1 #Prima somma e poi scrive, quindi mettiamo 2, perchè se mettessimo 1 scriverà anche 5
 else:
     print('numero:',i) #Si può scrivere pure senza else ma è più facile leggerlo con esso
