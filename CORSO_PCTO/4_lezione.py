@@ -63,3 +63,69 @@ if nome not in invitati:  #Se tu sbagli ad accedere non proseguo
 else:
   print('Benvenuti')
   password = input('Password')
+_______________________________________________
+lista = [1,2,3]
+nuova_lista = lista
+lista[0] = -5 #prendi 1 e cambiamelo in -5
+print(lista)
+print(nuova_lista)
+_________________________________________________
+lista = [1,2,3]
+nuova_lista = lista[:] #Deve essere uguale agli indici della prima, mi darà la nuova e la vecchia lista
+lista[0] = -5 
+print(lista)
+print(nuova_lista)
+__________________________________________________
+numeri = []
+for i in range(1,100):
+  numeri.append(i)
+print(numeri) #Ci darà tutti i numeri da 1 a 100
+______________________________________
+numeri = []
+for i in range(1,100):
+  numeri.append(i)
+print(numeri) 
+
+numeri = [i for i in range(1,101) if i % 3 != 0] #Ci andrà a stampare tutti i numeri divisibili per 3
+print('numeri')
+____________________________________________
+numeri = [1,2,3]
+paesi = ['IT','UK',FR']
+celle = [['A1','A2','A3'], ['B1','B2','B3']]
+print(celle[0][2]) #Se metto un solo 0 chiedo la prima lista, se metto un secono numero prendo l'elemento di quella lista       
+_____________________________________________________
+celle = [['A1','A2','A3'], ['B1','B2','B3']]
+for x in cella:
+     for y in x:
+        print('elemento:',y)
+__________________________________________________________
+lista1 = ['Roma','Napoli']
+lista2 = ['Milano','Bari']
+lista_somma = lista1 + lista2
+_____________________________________________________________
+lista_numeri = [0,1] * 10 #scriverà 0 e 1 per 10 volte
+print(lista_numeri)
+______________________________________________________________
+nome = 'Antonio'
+ print(nome[4]) #Scriverà solo la n
+
+nome = 'Antonio'
+nome_maiuscolo = nome.upper() #Mette tutto in maiuscolo         
+print(nome_maiuscolo)         
+_________________________________________________________________________
+lista = []
+tuple = () #Tutte le operazioni non sono consentite rispetto alla lista, si può scrivere pure senza parentesi tonde  
+print (len(tuple))
+________________________________________________________________________
+SECONDO CODICE #Dizionario, utilizza parentesi graffe
+emails = {
+  'Antonio' : gg
+  'Marco' : mm
+print(emails['Antonio']) # ci darà l'email di antonio  
+__________________________________________________________________________
+voti ={}
+voti['Alessandro'] = '3'
+voti['Marco'] = '8' 
+print(voti['Alessandro'])  
+voti.update({'Alessandro':'2'})
+print(len(voti)) #Mi dirà quanti studenti ci staranno all'interno
